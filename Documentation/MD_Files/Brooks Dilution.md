@@ -50,19 +50,24 @@ Quantifying the spatially-varying concentration field in terms of $x$ then requi
 
 # Solution of Diffusion Equation
 For a point source, the solution of the heat equation is a Gaussian:
+
 $$C(x,y)=\frac{C_0\sqrt{U}}{\sqrt{4\pi\varepsilon x}}e^{-\frac{Uy^2}{4\varepsilon x}}$$
 
 For a line source centred at $y=0$ and width $B$, the concentration is a superposition of point sources:
+
 $$C(x',y)=\frac{C_0}{\sqrt{4\pi\varepsilon_0x'/U}}\int_{-B/2}^{B/2} e^{-\frac{U(y-y')^2}{4\varepsilon_0x'}}dy'$$
 
 Note that this assumes uniform concentration between $\pm B$, and zero concentration elsewhere. The solution of this is:
+
 $$C(x',y)=\frac{C_0}{2}\left(\mathrm{erf}\left(\frac{\sqrt{U} \left(B+2y\right)}{4\sqrt{{x'\varepsilon_{0}}}}\right) + \mathrm{erf}\left(\frac{\sqrt{U} \left(B - 2y\right)}{4\sqrt{x'\varepsilon_{0}}}\right)\right)
 $$
 
 which has a maximum value at $y=0$:
+
 $$C(x',0)=C_0\mathrm{erf}\left(\frac{U B}{4\sqrt{{Ux'\varepsilon_{0}}}}\right)$$
 
 Using the subsitution $\beta=\frac{12\varepsilon_0}{UB}$, the peak concentration is:
+
 $$C(x',0)=C_0\mathrm{erf}\left(\sqrt{\frac{3 B}{4\beta x'}}\right)$$
 
 # Transformation from $x'$ to $x$
