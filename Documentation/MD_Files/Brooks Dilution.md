@@ -49,14 +49,14 @@ For a line source centred at $y=0$ and width $B$, the concentration is a superpo
 $$C(x',y)=\frac{C_0}{\sqrt{4\pi\varepsilon_0x'/U}}\int_{-B/2}^{B/2} e^{-\frac{U(y-y')^2}{4\varepsilon_0x'}}dy'$$
 
 Note that this assumes uniform concentration between $\pm B$, and zero concentration elsewhere. The solution of this is:
-$$C(x',y)=\frac{C_0}{2}\left(\operatorname{erf}\left(\frac{\sqrt{U} \left(B+2y\right)}{4\sqrt{{x'\varepsilon_{0}}}}\right) + \operatorname{erf}\left(\frac{\sqrt{U} \left(B - 2y\right)}{4\sqrt{x'\varepsilon_{0}}}\right)\right)
+$$C(x',y)=\frac{C_0}{2}\left(\mathrm{erf}\left(\frac{\sqrt{U} \left(B+2y\right)}{4\sqrt{{x'\varepsilon_{0}}}}\right) + \mathrm{erf}\left(\frac{\sqrt{U} \left(B - 2y\right)}{4\sqrt{x'\varepsilon_{0}}}\right)\right)
 $$
 
 which has a maximum value at $y=0$:
-$$C(x',0)=C_0\operatorname{erf}\left(\frac{U B}{4\sqrt{{Ux'\varepsilon_{0}}}}\right)$$
+$$C(x',0)=C_0\mathrm{erf}\left(\frac{U B}{4\sqrt{{Ux'\varepsilon_{0}}}}\right)$$
 
 Using the subsitution $\beta=\frac{12\varepsilon_0}{UB}$, the peak concentration is:
-$$C(x',0)=C_0\operatorname{erf}\left(\sqrt{\frac{3 B}{4\beta x'}}\right)$$
+$$C(x',0)=C_0\mathrm{erf}\left(\sqrt{\frac{3 B}{4\beta x'}}\right)$$
 
 # Transformation from $x'$ to $x$
 
@@ -84,16 +84,16 @@ where $C_0B$ is the area of the starting 'mass' used for normalising and
 $$C(x',y)=\frac{C_0}{\sqrt{4\pi\varepsilon_0x'/U}}\int_{-B/2}^{B/2} e^{-\frac{U(y-y')^2}{4\varepsilon_0x'}}dy'$$
 
 The solution of this is:
-$$C(x',y)=\frac{C_0}{2}\left(\operatorname{erf}\left(\frac{\sqrt{U} \left(B+2y\right)}{4\sqrt{{x'\varepsilon_{0}}}}\right) + \operatorname{erf}\left(\frac{\sqrt{U} \left(B - 2y\right)}{4\sqrt{x'\varepsilon_{0}}}\right)\right)
+$$C(x',y)=\frac{C_0}{2}\left(\mathrm{erf}\left(\frac{\sqrt{U} \left(B+2y\right)}{4\sqrt{{x'\varepsilon_{0}}}}\right) + \mathrm{erf}\left(\frac{\sqrt{U} \left(B - 2y\right)}{4\sqrt{x'\varepsilon_{0}}}\right)\right)
 $$
 
 Substituting into the variance equation, we get
-$$\sigma(x')^2=\frac{1}{2B}\int_{-\infty}^{\infty}y^2\left(\operatorname{erf}\left(\frac{\sqrt{U} \left(B+2y\right)}{4\sqrt{{x'\varepsilon_{0}}}}\right) + \operatorname{erf}\left(\frac{\sqrt{U} \left(B-2y\right)}{4\sqrt{x'\varepsilon_{0}}}\right)\right)dy$$
+$$\sigma(x')^2=\frac{1}{2B}\int_{-\infty}^{\infty}y^2\left(\mathrm{erf}\left(\frac{\sqrt{U} \left(B+2y\right)}{4\sqrt{{x'\varepsilon_{0}}}}\right) + \mathrm{erf}\left(\frac{\sqrt{U} \left(B-2y\right)}{4\sqrt{x'\varepsilon_{0}}}\right)\right)dy$$
 
 `y^2*(erf(sqrt(U)*(B+2y)/(4*sqrt(x*epsilon_0)))+erf(sqrt(U)*(B-2y)/(4*sqrt(x*epsilon_0))`
 
 This was solved by https://www.integral-calculator.com/# for the equation 
-$y^2*(\operatorname{erf}(A*(B+2y))+\operatorname{erf}(A*(B-2y)))$
+$y^2*(\mathrm{erf}(A*(B+2y))+\mathrm{erf}(A*(B-2y)))$
 where $A=\frac{\sqrt{U}}{4\sqrt{x'\varepsilon}}$ (version with $x'$, $\sqrt{U}$ etc failed on above website)
 The solution of the equation above is:
 $$ \frac{2A^2B^3+3B}{12A^2}=\left[\frac{B^3}{6}+\frac{4x'\varepsilon_0B}{U} \right]$$
@@ -124,9 +124,9 @@ Since $x=x'$ at $x=0$, $C=-1$ and the equation above becomes
 
 $$x'=\frac{B}{2\beta}\left(\left(\frac{(2-n)\beta x}{B} +1\right)^{\frac{2}{2-n}}-1 \right)$$
 
-Substitute this into peak concentration (which was found in terms of $x'$, i.e.$C(x',0)=C_0\operatorname{erf}\left(\sqrt{\frac{3 B}{4\beta x'}}\right)$) leads to the concentration we want, in terms of $x$:
+Substitute this into peak concentration (which was found in terms of $x'$, i.e.$C(x',0)=C_0\mathrm{erf}\left(\sqrt{\frac{3 B}{4\beta x'}}\right)$) leads to the concentration we want, in terms of $x$:
 
-$$\boxed{C(x,0)=C_0\operatorname{erf}\left(\left[\frac{2 }{3}\left(\left(\frac{(2-n)\beta x}{B} +1\right)^{\frac{2}{2-n}}-1 \right)\right]^{-\frac{1}{2}}\right)}$$
+$$\boxed{C(x,0)=C_0\mathrm{erf}\left(\left[\frac{2 }{3}\left(\left(\frac{(2-n)\beta x}{B} +1\right)^{\frac{2}{2-n}}-1 \right)\right]^{-\frac{1}{2}}\right)}$$
 
 # Plume Width
 The plume width can be calculated by substituting our expression for $x'$ into the equation for $L(x')$:
@@ -146,9 +146,9 @@ Brooks considered 3 values of $n$ which apply in different flow regimes:
 Peak concentrations and plume widths for these values of $n$ are tabulated below. 
 |$n$|Plume Width $\frac{L}{B}$|Peak Concentration $\frac{C_{max}}{C_0}$|
 |-|-|-|
-|0|$\left[1+\frac{2\beta x}{B} \right]^{\frac{1}{2}}$|$\operatorname{erf}\left(\left[\frac{2 }{3}\left(\frac{2\beta x}{B} \right)\right]^{-\frac{1}{2}}\right)$
-|1|$\left[1+\frac{\beta x}{B} \right]$|$\operatorname{erf}\left(\left[\frac{2 }{3}\left(\left(\frac{\beta x}{B} +1\right)^{2}-1 \right)\right]^{-\frac{1}{2}}\right)$
-|$\frac{4}{3}$|$\left[1+\frac{2\beta x}{3B}\right]^{\frac{3}{2}}$|$\operatorname{erf}\left(\left[\frac{2 }{3}\left(\left(\frac{2\beta x}{3B} +1\right)^{3}-1 \right)\right]^{-\frac{1}{2}}\right)$
+|0|$\left[1+\frac{2\beta x}{B} \right]^{\frac{1}{2}}$|$\mathrm{erf}\left(\left[\frac{2 }{3}\left(\frac{2\beta x}{B} \right)\right]^{-\frac{1}{2}}\right)$
+|1|$\left[1+\frac{\beta x}{B} \right]$|$\mathrm{erf}\left(\left[\frac{2 }{3}\left(\left(\frac{\beta x}{B} +1\right)^{2}-1 \right)\right]^{-\frac{1}{2}}\right)$
+|$\frac{4}{3}$|$\left[1+\frac{2\beta x}{3B}\right]^{\frac{3}{2}}$|$\mathrm{erf}\left(\left[\frac{2 }{3}\left(\left(\frac{2\beta x}{3B} +1\right)^{3}-1 \right)\right]^{-\frac{1}{2}}\right)$
 
 As expected, the plume expands and dilutes more rapidly for larger $n$. Also, recalling that $\beta=\frac{12\varepsilon_0}{UB}$, we can see that the plume disperses more quickly when $U$ and/or $B$ is small. 
 
@@ -169,22 +169,22 @@ The secondary dilution is the reciprocal of the normalised peak concentration ta
 |$\varepsilon_0$|$\alpha B^n$|Calculated using values above|
 |U|From data|Typical value (mean of submitted hydrographic datasets) is ~0.1m/s. Recommend undertaking sensitivity analysis of this parameter.
 |x|100m|Distance to edge of mixing zone
-|$D$|Dilution = $\frac{C_{max}}{C_0}$|1/$\operatorname{erf}\left(\left[\frac{2 }{3}\left(\left(\frac{2\beta x}{3B} +1\right)^{3}-1 \right)\right]^{-\frac{1}{2}}\right)$ for $n=\frac{4}{3}$
+|$D$|Dilution = $\frac{C_{max}}{C_0}$|1/$\mathrm{erf}\left(\left[\frac{2 }{3}\left(\left(\frac{2\beta x}{3B} +1\right)^{3}-1 \right)\right]^{-\frac{1}{2}}\right)$ for $n=\frac{4}{3}$
 
 # EQS Assessment
 We may be interested in the plume area which exceeds a given concentration. 
 
 First of all, we need to establish the distance at which the required dilution is achieved. This can be done by rearranging the equation for peak concentration:
-$$C(x,0)=C_0\operatorname{erf}\left(\left[\frac{2 }{3}\left(\left(\frac{(2-n)\beta x}{B} +1\right)^{\frac{2}{2-n}}-1 \right)\right]^{-\frac{1}{2}}\right)$$
+$$C(x,0)=C_0\mathrm{erf}\left(\left[\frac{2 }{3}\left(\left(\frac{(2-n)\beta x}{B} +1\right)^{\frac{2}{2-n}}-1 \right)\right]^{-\frac{1}{2}}\right)$$
 
-$$D=\frac{C_0}{C(x,0)}=1/\operatorname{erf}\left(\left[\frac{2 }{3}\left(\left(\frac{(2-n)\beta x}{B} +1\right)^{\frac{2}{2-n}}-1 \right)\right]^{-\frac{1}{2}}\right)$$
+$$D=\frac{C_0}{C(x,0)}=1/\mathrm{erf}\left(\left[\frac{2 }{3}\left(\left(\frac{(2-n)\beta x}{B} +1\right)^{\frac{2}{2-n}}-1 \right)\right]^{-\frac{1}{2}}\right)$$
 
-$$\rightarrow  \boxed{x =\frac{B}{(2-n)\beta}\left[\left(\frac{3 }{2}\left(\operatorname{ierf}\left(\frac{1}{D}\right)\right)^{-2}+1\right)^{\frac{2-n}{2}}-1\right]}$$
+$$\rightarrow  \boxed{x =\frac{B}{(2-n)\beta}\left[\left(\frac{3 }{2}\left(\mathrm{ierf}\left(\frac{1}{D}\right)\right)^{-2}+1\right)^{\frac{2-n}{2}}-1\right]}$$
 At this distance, the peak concentration has reduced by the required dilution. 
 
 At intermediate distances, we also need to calculate the plume width at which the required dilution is achieved. 
 
-$$D=\frac{C_0}{C(x',y)}=2/\left(\operatorname{erf}\left(\frac{\sqrt{U} \left(B+2y\right)}{4\sqrt{{x'\varepsilon_{0}}}}\right) + \operatorname{erf}\left(\frac{\sqrt{U} \left(B - 2y\right)}{4\sqrt{x'\varepsilon_{0}}}\right)\right)
+$$D=\frac{C_0}{C(x',y)}=2/\left(\mathrm{erf}\left(\frac{\sqrt{U} \left(B+2y\right)}{4\sqrt{{x'\varepsilon_{0}}}}\right) + \mathrm{erf}\left(\frac{\sqrt{U} \left(B - 2y\right)}{4\sqrt{x'\varepsilon_{0}}}\right)\right)
 $$
 which must be solved numerically for $y$.
 
@@ -192,7 +192,7 @@ We can generate a polygon of these values which define the zone within which the
 
 Or we could contour the 2d concentration field...
 
-$S_2=\operatorname{erf}\left(\left[\frac{2 }{3}\left(\left(\frac{2\beta x}{3B} +1\right)^{3}-1 \right)\right]^{-\frac{1}{2}}\right)^{-1}$
+$S_2=\mathrm{erf}\left(\left[\frac{2 }{3}\left(\left(\frac{2\beta x}{3B} +1\right)^{3}-1 \right)\right]^{-\frac{1}{2}}\right)^{-1}$
 
 # References
 
