@@ -14,26 +14,32 @@ A plot of the plume spread is shown below:
 ![brooks.jpeg](../_resources/brooks.jpeg)
 
 
-
 Noting that $U=\frac{x}{t}$, the diffusion equation can be expressed as:
 
 $$U\frac{\partial C}{\partial x} = \varepsilon\frac{\partial^2 C}{\partial y^2\tag{2}}$$
 
 If $\varepsilon$ is constant, then the diffusion equation above is the classical heat equation and can be readily solved. One solution, for example, is the Gaussian distribution:
+
 $$C(y,t)=\frac{C_0}{\sqrt{4\pi\varepsilon t}}e^{-\frac{y^2}{4\varepsilon t}}$$
+
 or 
+
 $$C(x,y)=\frac{C_0\sqrt{U}}{\sqrt{4\pi\varepsilon x}}e^{-\frac{Uy^2}{4\varepsilon x}}$$
 
 However, there is extensive evidence from field data that the dispersion coefficient is not uniform but rather increases with the size of the dispersing plume. 
 
 Brooks therefore considered a time/spatially varying dispersion coefficient
+
 $$\varepsilon=\varepsilon_0f(x)$$
+
 where $\varepsilon_0$ is the coefficient at $x=t=0$ and $f(x)$ is some function relating the two. 
 
 Now the diffusion equation is:
+
 $$\frac{U}{f(x)}\frac{\partial C}{\partial x} = \varepsilon_0\frac{\partial^2 C}{\partial y^2}$$
 
 Brooks defined a new variable $x'$ such that $dx' = f(x)dx$, so the diffusion equation becomes:
+
 $$U\frac{\partial C}{\partial x'} = \varepsilon_0\frac{\partial^2 C}{\partial y^2}$$
 
 This is the classical heat equation (i.e. constant dispersion coefficient) defined in terms of a transformed $x$ coordinate. 
