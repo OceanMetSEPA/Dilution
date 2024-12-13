@@ -229,7 +229,7 @@ Or we could contour the 2d concentration field...
 
 The secondary dilution value is given by:
 
-$$§boxed{S_2=\mathrm{erf}\left(\left[\frac{2 }{3}\left(\left(\frac{2\beta x}{3B} +1\right)^{3}-1 \right)\right]^{-\frac{1}{2}}\right)^{-1}}$$
+$$\boxed{S_2=\mathrm{erf}\left(\left[\frac{2 }{3}\left(\left(\frac{2\beta x}{3B} +1\right)^{3}-1 \right)\right]^{-\frac{1}{2}}\right)^{-1}}$$
 
 # References
 
