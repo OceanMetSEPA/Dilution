@@ -1,6 +1,6 @@
 # Brooks model
 
-Brooks considered the spreading of an extended plume of width $B$ in a uniform ambient current, $U$m/s in the $x$ direction.
+Brooks considered the spreading of an extended plume of width $B$ in a uniform ambient current, $U$ m/s in the $x$ direction.
 
 The plume advects in the $x$ direction, with minimal longitudinal dispersion. 
 
