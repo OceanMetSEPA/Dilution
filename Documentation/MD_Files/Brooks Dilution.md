@@ -7,6 +7,7 @@ The plume advects in the $x$ direction, with minimal longitudinal dispersion.
 The plume disperses laterally as described by the diffusion equation:
 
 $$\frac{\partial C}{\partial t} = \varepsilon\frac{\partial^2 C}{\partial y^2}\tag{1}$$
+
 where $\varepsilon$ is the diffusion coefficient with units $m^2/s$. 
 
 A plot of the plume spread is shown below:
