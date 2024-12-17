@@ -147,7 +147,7 @@ $$\boxed{C(x,0)=C_0\left(\frac{(2-n)\beta x}{B}+1\right)^{\frac{1}{n-2}}}$$
 
 Compare this with the original Brooks equation (which had a constant 'top-hap' starting concentration):
 
-$$\boxed{C(x,0)=C_0\operatorname{erf}\left(\left[\frac{2 }{3}\left(\left(\frac{(2-n)\beta x}{B} +1\right)^{\frac{2}{2-n}}-1 \right)\right]^{-\frac{1}{2}}\right)}$$
+$$\boxed{C(x,0)=C_0\mathrm{erf}\left(\left[\frac{2 }{3}\left(\left(\frac{(2-n)\beta x}{B} +1\right)^{\frac{2}{2-n}}-1 \right)\right]^{-\frac{1}{2}}\right)}$$
 
 The 'Gaussian' version dilutes more rapidly. A comparison plot with the 'top-hat' starting concentration is shown below for a dilution of 10x:
 ![tophatVsGaussian.jpg](../_resources/tophatVsGaussian.jpg)
