@@ -226,7 +226,7 @@ which must be solved numerically for $y$.
 We can generate a polygon of these values which define the zone within which the dilution $D$ has not been reached yet. 
 For example, the plume where the dilution is less than 10x is:
 
-![10xDilution.jpg](../_resources/10xDilution.jpg)
+![10xDilution.JPG](../_resources/10xDilution.JPG)
 
 Or we could contour the 2d concentration field...
 
